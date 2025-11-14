@@ -14,6 +14,11 @@ def div(a, b):
     if b == 0: raise ZeroDivisionError
     return a / b
 
+def log(a, b):
+    if b <= 0: raise ValueError
+    return math.log(b, a)
 
+def exp(a, b):
+    return a ** b
 
 
