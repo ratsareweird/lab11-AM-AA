@@ -6,8 +6,8 @@ import math
 def square_root(a):
     try:
         return math.sqrt(a)
-    except ValueError as error:
-        print(error)
+    except ValueError:
+        raise ValueError
 def hypotenuse(a, b):
     return math.hypot(a, b) # can have negative nums
 
