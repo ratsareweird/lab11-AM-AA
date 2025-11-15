@@ -1,5 +1,9 @@
+# https://github.com/ratsareweird/lab11-AM-AA.git
+# Partner 1: Austin Aanestad
+# Partner 2: Alec McEwen
+
 import math
-# First example
+
 def add(a, b):
     return a + b
 
