@@ -1,9 +1,7 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/ratsareweird/lab11-AM-AA.git
+# Partner 1: Austin Aanestad
+# Partner 2: Alec McEwen
 
-One function per operation, in order.
-"""
 import math
 def square_root(a):
     try:
@@ -23,10 +21,9 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def divide(a, b):
-    if a == 0
-        raise ZeroDivisionError
-    return b / a   # raise ZeroDivisionError if a == 0
+def div(a, b):
+    if b == 0: raise ZeroDivisionError
+    return a / b
 
 def logarithm(a, b):
     if a <= 0 or b <= 0 or a ==1:
