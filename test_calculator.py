@@ -1,5 +1,4 @@
 import unittest
-
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
@@ -11,6 +10,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_subtract(self): # 3 assertions
         self.assertEqual(subtract(4, 3), 1)
+        self.assertEqual(subtract(2, 7), -5)
+        self.assertEqual(subtract(463, 100), 363)
     ##########################
 
     ######## Partner 1
@@ -20,7 +21,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(multiply(91, 210), 19110)
 
     def test_divide(self): # 3 assertions
-        self.assertAlmostEqual(div(120,7), 17.14285)
+        self.assertAlmostEqual(div(120,7), 17.142857142857142)
         self.assertEqual(div(210,2), 105)
         self.assertEqual(div(60,.4), 150)
 
@@ -50,8 +51,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(hypotenuse(3,4), 5)
-        self.assertAlmostEqual(hypotenuse(8,10), 12.8062)
-        self.assertAlmostEqual(hypotenuse(10,10), 14.1421)
+        self.assertAlmostEqual(hypotenuse(8,10), 12.80624847486569)
+        self.assertAlmostEqual(hypotenuse(10,10), 14.142135623730951)
 
     def test_sqrt(self): # 3 assertions
         self.assertRaises(square_root(-10), ValueError)
