@@ -28,7 +28,7 @@ class TestCalculator(unittest.TestCase):
     ##########################
     ####### Partner 2
     def test_divide_by_zero(self): # 1 assertion
-        self.assertRaises(div(4, 0), ZeroDivisionError)
+        self.assertRaises(ZeroDivisionError,div,4,0)
 
     def test_logarithm(self): # 3 assertions
         self.assertEqual(logarithm(2, 4), 2)
@@ -38,12 +38,12 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_log_invalid_base(self): # 1 assertion
-        self.assertRaises(logarithm(-5, -12), ValueError)
+        self.assertRaises(ValueError,logarithm,-5, -12)
 
     ##########################
     ######## Partner 1
     def test_log_invalid_argument(self):
-        self.assertRaises(logarithm(0,5), ValueError)# 1 assertion
+        self.assertRaises(ValueError,logarithm,0,5)# 1 assertion
     #     # call log function inside, example:
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     logarithm(0, 5)
@@ -55,9 +55,9 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(hypotenuse(10,10), 14.142135623730951)
 
     def test_sqrt(self): # 3 assertions
-        self.assertRaises(square_root(-10), ValueError)
+        self.assertRaises(ValueError, square_root, -10)
         self.assertEqual(square_root(25), 5)
-        self.assertAlmostEqual(square_root(10), 3.1622)
+        self.assertAlmostEqual(square_root(10), 3.1622776601683795)
 
 
 # Do not touch this
