@@ -1,3 +1,7 @@
+# https://github.com/ratsareweird/lab11-AM-AA.git
+# Partner 1: Austin Aanestad
+# Partner 2: Alec McEwen
+
 import unittest
 from calculator import *
 
